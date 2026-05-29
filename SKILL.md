@@ -54,6 +54,8 @@ Check the draft against:
 - [references/banned-phrases-ru.md](references/banned-phrases-ru.md)
 - [references/banned-phrases-en.md](references/banned-phrases-en.md)
 - [references/structural-patterns.md](references/structural-patterns.md)
+- [references/slop-frequency-rules.md](references/slop-frequency-rules.md)
+- [references/pattern-severity.md](references/pattern-severity.md)
 - [references/neural-turns-and-fake-depth.md](references/neural-turns-and-fake-depth.md)
 - [references/cringe-rhetoric-patterns.md](references/cringe-rhetoric-patterns.md)
 - [references/examples-good-vs-bad.md](references/examples-good-vs-bad.md)
@@ -67,8 +69,14 @@ Look for:
 - fake neutrality or modal hedging
 - LinkedIn-style rhetorical tricks
 - visual rhetoric overuse: repeated colons, em dashes, faux-dramatic paragraphing
+- repeated model habits: the same structure used as the hidden template of the text
 - fake-depth turns and symmetrical contrast frames
 - lack of opinion, tension, or personal layer
+
+After detecting issues, classify severity before rewriting:
+- high severity: restructure first
+- medium severity: rewrite the affected parts
+- low severity: fix only if it improves flow
 
 ### Step 3: Remove AI patterns
 
@@ -76,11 +84,14 @@ Delete or rewrite:
 - filler phrases that announce a point instead of making it
 - repeated high-level abstractions
 - structural AI patterns
+- repeated model habits that create the text skeleton
 - fake emphasis adjectives
 - empty transitions
 - formal introduction/conclusion blocks unless the genre truly needs them
 
 Do not stop at synonym replacement. If a sentence is empty, rebuild it.
+
+When high-severity issues remain, fix structure before wording. Do not polish an empty frame.
 
 ### Step 4: Restore human signals
 
@@ -107,10 +118,13 @@ Validate against [references/workflow-and-audit.md](references/workflow-and-audi
 Minimum pass criteria:
 - no obvious banned phrases remain
 - no obvious structural AI patterns remain
+- repeated model habits are gone or clearly intentional
 - rhythm is not monotone
 - the text contains specifics where genre allows them
 - the text has a discernible viewpoint when the task calls for it
 - no fake modal hedging remains unless uncertainty is real
+
+Use scoring from [references/workflow-and-audit.md](references/workflow-and-audit.md) for medium and long rewrites, audits, articles, expert posts, or explicit quality control requests. Skip scoring for quick line edits.
 
 ### Step 6: Fix only failed points
 
