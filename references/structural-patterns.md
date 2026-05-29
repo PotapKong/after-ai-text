@@ -56,9 +56,34 @@ In short posts, repeated colons often make the text feel outlined instead of wri
 
 If commas or sentence splits work, prefer them. Overused em dashes are a frequent AI smell in Russian drafts.
 
+### 9. Question-led scaffolding
+
+Question-led paragraph starts can be a useful teaching device. They can also become a model scaffold.
+
+Watch patterns like:
+- `Что такое X?`
+- `Как это работает?`
+- `Почему это важно?`
+- `Зачем вообще об этом говорить?`
+- `Что делать дальше?`
+
+Keep the question when it:
+- reflects a real reader objection or doubt
+- belongs to FAQ, lessons, tutorials, scripts, or educational explainers
+- creates useful narrative movement
+
+Remove or rewrite it when the question only opens the paragraph and the answer could start directly.
+
+Weak:
+- `Почему это важно? Потому что рынок меняется.`
+
+Better:
+- `Рынок меняется, и это меняет условия игры.`
+
 ## Detection rule
 
 When auditing, look beyond words. Ask:
 - Is the sentence trying to sound sharp instead of saying something?
 - Does the structure create fake drama?
 - Would a direct sentence say the same thing better?
+- Is this pattern intentional for the genre, or is it only scaffolding?
