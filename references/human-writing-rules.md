@@ -84,3 +84,29 @@ Weak:
 
 Better:
 - `Сразу понятно, что писал не человек.`
+
+## 10. Avoid pull-quote endings
+
+If the last sentence of a paragraph or post sounds like a quote card, rewrite it or cut it.
+
+Watch for endings that are:
+- short and too neatly finished
+- framed as a universal lesson
+- safer and broader than the actual paragraph
+- reusable in almost any text on the same topic
+- written to sound wise rather than to add meaning
+
+A strong final line is allowed. The problem is a polished one-liner that closes the paragraph without adding detail, consequence, or pressure.
+
+Instead:
+- add a concrete consequence
+- add a useful exception
+- end one sentence earlier
+- replace the generalization with a detail
+- make the claim narrower and more accountable
+
+Weak:
+- `В конечном счёте, всё решает качество текста.`
+
+Better:
+- `Разница часто видна в первом абзаце: до слабого второго абзаца читатель просто не доходит.`
