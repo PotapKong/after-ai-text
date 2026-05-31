@@ -1,12 +1,20 @@
 ## Audit
 
+### Verdict
+- Light cleanup / medium rewrite / deep rewrite
+
+### What to fix first
+1. ...
+2. ...
+3. ...
+
 ### AI signals found
 - ...
 
-### Phrase-level issues
+### Structural issues
 - ...
 
-### Structural issues
+### Phrase-level issues
 - ...
 
 ### Fake-depth turns / neural wrappers
@@ -15,10 +23,4 @@
 ### Weak human signals
 - ...
 
-### What to fix first
-1. ...
-2. ...
-3. ...
-
-### Verdict
-- Light cleanup / medium rewrite / deep rewrite
+Keep it ranked and brief. Do not dump every minor phrase if the real problem is structural.

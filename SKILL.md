@@ -23,6 +23,13 @@ Turn AI-assisted drafts into text that reads like a real person wrote it.
 
 If the request is ambiguous, default to **rewrite**.
 
+## Default delivery
+
+- For most real tasks, return the **clean rewritten text first**.
+- Add notes only when they help the user decide what to do next.
+- Use a fuller audit structure only when the user explicitly asks for an audit, diagnosis, or explanation.
+- Do not force a rigid report shape onto chat-like tasks, captions, short posts, or line edits.
+
 ## Core workflow
 
 Copy this checklist for multi-step tasks:
@@ -46,6 +53,11 @@ Determine:
 - whether style samples exist
 - whether personal details/facts are available
 - whether the user wants only audit, only rewrite, or both
+
+Fast routing:
+- short fragment, CTA, caption, subject line, one paragraph -> fix quickly, no heavy audit dump
+- medium draft -> audit mentally, rewrite, then run a light second pass
+- long article, expert post, or high-stakes copy -> use the full audit loop and scoring
 
 ### Step 2: Diagnose AI signals
 
@@ -78,6 +90,8 @@ After detecting issues, classify severity before rewriting:
 - medium severity: rewrite the affected parts
 - low severity: fix only if it improves flow
 
+When multiple issues stack in the same paragraph, assume the wording is not the real problem. The hidden skeleton is.
+
 ### Step 3: Remove AI patterns
 
 Delete or rewrite:
@@ -92,6 +106,8 @@ Delete or rewrite:
 Do not stop at synonym replacement. If a sentence is empty, rebuild it.
 
 When high-severity issues remain, fix structure before wording. Do not polish an empty frame.
+
+Prefer deletion over decorative replacement. If a sentence only performs importance, transition, or pseudo-insight, cut it unless the genre truly needs that move.
 
 ### Step 4: Restore human signals
 
@@ -108,6 +124,8 @@ Prioritize:
 Do not invent personal experience, case studies, or facts. If the rewrite needs specifics that are missing, either:
 - leave the text more neutral, or
 - ask for the missing detail if it materially affects quality
+
+Do not add random slang, deliberate typos, fake roughness, or synthetic “human texture”. Human writing is not noise. It is pressure, selectivity, and specificity.
 
 When writing for Misha, prefer a calmer, less performative line even if it sounds slightly less literary. Avoid sentences that sound neatly packaged or proudly aphoristic.
 
@@ -126,6 +144,13 @@ Minimum pass criteria:
 
 Use scoring from [references/workflow-and-audit.md](references/workflow-and-audit.md) for medium and long rewrites, audits, articles, expert posts, or explicit quality control requests. Skip scoring for quick line edits.
 
+Run this short self-check before delivery:
+- Which 1-3 lines still sound prebuilt?
+- Where is the text still too smooth?
+- Did I replace empty phrasing with actual content, or only with better-sounding emptiness?
+
+If you can point to a suspicious line, fix it before sending.
+
 ### Step 6: Fix only failed points
 
 Do a targeted second pass. Do not rewrite the whole draft again unless the first pass failed broadly.
@@ -140,6 +165,11 @@ Use [assets/audit-output-template.md](assets/audit-output-template.md).
 
 Use [assets/rewrite-output-template.md](assets/rewrite-output-template.md).
 
+Default rewrite behavior:
+- short tasks -> return only the rewritten text unless commentary is useful
+- medium tasks -> rewritten text first, then 2-4 short notes if needed
+- long or sensitive tasks -> rewritten text plus concise explanation of the main fixes
+
 ### Prompt-mode output
 
 Use [assets/natural-text-system-prompt.md](assets/natural-text-system-prompt.md).
@@ -152,6 +182,9 @@ Use [assets/natural-text-system-prompt.md](assets/natural-text-system-prompt.md)
 - Do not preserve AI structure just because the wording changed.
 - Do not claim a style match without actual samples.
 - Do not invent personal facts to make the text feel human.
+- Do not turn every rewrite into a lecture about AI writing.
+- Do not keep template headings like `What changed` or `Notes` when the user only needs the finished text.
+- Do not flatten all sharpness out of the text; remove falseness, not personality.
 
 ## When samples are provided
 
