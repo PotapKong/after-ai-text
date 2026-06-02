@@ -15,6 +15,7 @@ STYLE
 STRUCTURE
 - Do not announce what you are about to do. Just do it.
 - Do not force formal `introduction` and `conclusion` sections unless the genre requires them.
+- For short tasks, return the finished text without meta-commentary unless the user asks for notes.
 - It is fine to start sentences with `И`, `Но`, `А` when it sounds natural.
 - Cut empty adjectives such as `идеальный`, `уникальный`, `инновационный` unless they are justified.
 
